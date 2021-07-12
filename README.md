@@ -1,6 +1,6 @@
 # ispy-ripple
 
-Data center application traces used for ispy and ripple can be downloaded from [here](https://drive.google.com/file/d/1tN8Jw1TcZ9CrDzDWK0HFUD-nVLhZDW9e/view?usp=sharing). These traces can be simulated using the [Intel PT frontend of zsim](https://github.com/stanford-mast/zsim/tree/memtrace).
+We provide a virtualbox image where data center applications used for i-spy and ripple evaluation are pre-installed and set up to run. Please download the VMDK file from [here](https://drive.google.com/file/d/1pP85BDT7wm4--o6NUMMwBqBej6CFKBso/view?usp=sharing). For instructions on how to import VMDK files, see this [blog](https://medium.com/riow/how-to-open-a-vmdk-file-in-virtualbox-e1f711deacc4). The username/password for the virtual machine are `osboxes.org`. Data center application traces used for ispy and ripple can be downloaded from [here](https://drive.google.com/file/d/1tN8Jw1TcZ9CrDzDWK0HFUD-nVLhZDW9e/view?usp=sharing). These traces can be simulated using the [Intel PT frontend of zsim](https://github.com/stanford-mast/zsim/tree/memtrace).
 
 # Setting up workloads on host/guest environment
 
@@ -20,7 +20,7 @@ do
 done
 ```
 
-We also provide a virtualbox image where HHVM workloads are pre-installed and set up to run. Please download the VMDK file from [here](https://drive.google.com/file/d/1pP85BDT7wm4--o6NUMMwBqBej6CFKBso/view?usp=sharing). For instructions on how to import VMDK files, see this [blog](https://medium.com/riow/how-to-open-a-vmdk-file-in-virtualbox-e1f711deacc4). The oss-performance benchmarks are in a folder of the same name that you can cd into right from `~`. You'll have to run the one line shell command from time_wait.md before you get started running benchmarks (if you don't it will tell you to do so). Also, the first run of a benchmark on a given startup will want to login to mysql to set things up- the credentials are `root` and `root`. So, to run the wordpress benchmark, for example, you would boot up the machine, cd into `oss-performance`, `cat time_wait.md` to figure out the one-liner shell command to run, then run `hhvm perf.php --wordpress --hhvm=$(which hhvm)`.
+Alternatively, you can use the virtualbox image where HHVM workloads are pre-installed and set up to run. The oss-performance benchmarks are in a folder of the same name that you can cd into right from `~`. You'll have to run the one line shell command from time_wait.md before you get started running benchmarks (if you don't it will tell you to do so). Also, the first run of a benchmark on a given startup will want to login to mysql to set things up- the credentials are `root` and `root`. So, to run the wordpress benchmark, for example, you would boot up the machine, cd into `oss-performance`, `cat time_wait.md` to figure out the one-liner shell command to run, then run `hhvm perf.php --wordpress --hhvm=$(which hhvm)`.
 
 Three DaCapo applications (Cassandra, Kafka, Tomcat): http://dacapobench.org
 
