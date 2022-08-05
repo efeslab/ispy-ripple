@@ -171,3 +171,20 @@ WARNING: All illegal access operations will be denied in a future release
 ===== DaCapo evaluation-git+309e1fa tomcat PASSED in 4300 msec =====
 Server stopped ... iteration complete
 ```
+
+# Verilator
+
+A sample execution's input and output of Verilator is listed below:
+
+```
+# Run command
+$ ./rocket-chip/emulator/emulator-freechips.rocketchip.system-DefaultConfig-dynamic +cycle-count ./rocket-chip/emulator/dhrystone-head.riscv
+# output
+This emulator compiled with JTAG Remote Bitbang client. To enable, use +jtag_rbb_enable=1.
+Listening on port 45237
+Microseconds for one run through Dhrystone: 495
+Dhrystones per Second:                      2016
+mcycle = 248002
+minstret = 198783
+Completed after 491664 cycles
+```
