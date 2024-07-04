@@ -2,6 +2,8 @@
 
 We provide a virtualbox image where data center applications used for i-spy and ripple evaluation are pre-installed and set up to run. Please download the VMDK file from [here](https://drive.google.com/file/d/1pP85BDT7wm4--o6NUMMwBqBej6CFKBso/view?usp=sharing). For instructions on how to import VMDK files, see this [blog](https://medium.com/riow/how-to-open-a-vmdk-file-in-virtualbox-e1f711deacc4). We tested this virtualbox image with 8 processor cores and 16GB RAM. The username/password for the virtual machine are `osboxes.org`. Data center application traces used for ispy and ripple can be downloaded from [here](https://drive.google.com/file/d/1tN8Jw1TcZ9CrDzDWK0HFUD-nVLhZDW9e/view?usp=sharing). These traces can be simulated using the [Intel PT frontend of zsim](https://github.com/stanford-mast/zsim/tree/memtrace).
 
+**Update (July 2024): Please download traces from [here](https://drive.google.com/file/d/10i082d0G_xKJYyEgi6MriIemPaPD32fr/view)**
+
 **Update: We also released traces of four more apps [here](https://drive.google.com/file/d/1RJYNbMR4G3m40ZiaflJ2Ox_DFB8vsgWv/view?usp=sharing)**
 
 # Setting up workloads on host/guest environment
